@@ -1,0 +1,7 @@
+config FLASH_W25
+	tristate "SPI flash"
+	depends on SPI && SYSFS
+	help
+	  Enable this driver to get read/write support to most SPI FLASH,
+	  after you configure the board init code to know about each eeprom
+	  on your target board.
